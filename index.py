@@ -211,3 +211,8 @@ def books_issued_bydate():
                             'issued person':i['person name']})
     return jsonify(all_books_issued=list_books)
     
+
+
+if __name__ == '__main__':
+    # Threaded option to enable multiple instances for multiple user access support
+    app.run(threaded=True, port=5000)
