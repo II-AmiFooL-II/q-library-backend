@@ -15,7 +15,7 @@ try:
 except Exception as e:
     print(e)
 
-@app.route('/')
+@app.route('/',methods=['GET','POST'])
 def hello_world():
     return 'Hello World'
 
